@@ -1,20 +1,8 @@
-const switcher = document.getElementById('switcher');
+const switcher = document.getElementById('gracias');
 
 switcher.addEventListener('click', function () {
 
-    document.body.classList.toggle('dark-theme');
-
-    var className = document.body.className;
-
-    if (className === 'light-theme') {
-
-        this.textContent = 'Tema Dark';
-
-    }
-    else {
-
-        this.textContent = 'Tema Light';
-
-    }
+    alert("Gracias por visitar mi sitio, utilicé varios snnipets, cosas que aprendí de las clases de la Unpaz, y de los cursos de "+
+    "Juan Pablo de la Torre Valdez, aún estoy aprendiendo!!!");
 
 }); 
