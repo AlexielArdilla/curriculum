@@ -1,3 +1,9 @@
+root {
+    --green: #00ff00;
+    --white: #fff;
+    --black: #000;
+  }
+
 html {
     box-sizing: border-box;
     font-size: 62.5%; /* 1REM = 10px */
@@ -53,29 +59,6 @@ a {
 img {
     max-width: 100%;
     display: block;
-}
-
-.btn {
-    background-color: #8cbc00;
-    display: block;
-    color: #FFF;
-    text-transform: uppercase;
-    font-weight: 900;
-    padding: 1rem;
-    transition: background-color .3s ease-out ;
-    text-align: center;
-    border: none;
-    width: 100%;
-}
-.btn:hover {
-    background-color: #769c02;
-    cursor: pointer;
-}
-
-@media (min-width: 768px) { 
-    .btn {
-        width: auto;
-    }
 }
 
 
@@ -169,44 +152,6 @@ img {
     
 }
 
-/** Bloque Nosotros */
-.sobre-nosotros {
-    background-image: linear-gradient( to bottom, transparent 50%, #037bc0 50%, #037bc0 100% ), url(../img/nosotros.jpg);
-    background-position: center, top left;
-    background-repeat: no-repeat;
-    background-size: 100%, 70rem;
-}
-
-@media (min-width: 768px) { 
-    .sobre-nosotros {
-        background-image: linear-gradient( to right, transparent 50%, #037bc0 50%, #037bc0 100% ), url(../img/nosotros.jpg);
-        background-position: left center ;
-        padding: 10rem 0;
-        background-size: 100%, 160rem;
-    }
-}
-.sobre-nosotros-grid {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-}
-@media (min-width: 768px) { 
-    .sobre-nosotros-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: unset;
-        column-gap: 10rem;
-    }
-}
-.texto-nosotros {
-    grid-row: 2 / 3;
-    color: #FFF;
-    padding: 5rem;
-}
-@media (min-width: 768px) { 
-    .texto-nosotros {
-        grid-column: 2 / 3;
-    }
-}
-
 /** Listado de Productos **/
 .contenido-principal {
     padding-top: 5rem;
@@ -228,84 +173,10 @@ img {
         width: 100%;
         object-fit: cover;
     }
-    .producto:nth-child(2) {
-        grid-column-start: 1;
-        grid-column-end: 4;
-    }
-    .producto:nth-child(2) img,
-    .producto:nth-child(3) img {
-        height: 30rem;
-        width: 100%;
-        object-fit: cover;
-    }
-    .producto:nth-child(3) {
-        grid-column-start: 4;
-        grid-column-end: 7;
-    }
-    .producto:nth-child(4) {
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    .producto:nth-child(5) {
-        grid-column-start: 3;
-        grid-column-end: 5;
-    }
-    .producto:nth-child(6) {
-        grid-column-start: 5;
-        grid-column-end: 7;
-    }
-    .producto:nth-child(7) {
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    .producto:nth-child(8) {
-        grid-column-start: 3;
-        grid-column-end: 5;
-    }
-    .producto:nth-child(9) {
-        grid-column-start: 5;
-        grid-column-end: 7;
-    }
-    .producto:nth-child(10) {
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    .producto:nth-child(11) {
-        grid-column-start: 3;
-        grid-column-end: 5;
-    }
-    .producto:nth-child(12) {
-        grid-column-start: 5;
-        grid-column-end: 7;
-    }
-    .producto:nth-child(13) {
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    .producto:nth-child(14) {
-        grid-column-start: 3;
-        grid-column-end: 5;
-    }
-    .producto:nth-child(15) {
-        grid-column-start: 5;
-        grid-column-end: 7;
-    }
-    .producto:nth-child(16) {
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    .producto:nth-child(17) {
-        grid-column-start: 3;
-        grid-column-end: 5;
-    }
-    .producto:nth-child(18) {
-        grid-column-start: 5;
-        grid-column-end: 7;
-    }
+   
 }
 
-
-
+ 
 .producto {
     background-color: #037bc0;
     margin-bottom: 2rem;
@@ -442,93 +313,8 @@ img {
 h3 span, p span, .entrada-meta span {
     color: #037bc0;
 }
-/*.contenido-entrada-blog {
-    width: 60rem;
-    margin: 0 auto;
-}*/
 
 
-/** Galeria **/
-.galeria {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-}
 
-@media (min-width: 768px) { 
-    .galeria {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
 
-.galeria img {
-    height: 40rem;
-    width: 40rem;
-    object-fit: cover;
-}
-/* Formulario */
-.formulario {
-    max-width: 60rem;
-    margin: 0 auto;
-}
 
-.formulario fieldset {
-   border: 1px solid black;
-   margin-bottom: 2rem;
-}
-.formulario legend {
-    background-color: #005485;
-    width: 100%;
-    text-align: center;
-    color: #FFF;
-    text-transform: uppercase;
-    font-weight: 900;
-    padding: 1rem;
-    margin-bottom: 4rem;
-
-}
-
-.campo {
-    display: flex;
-    margin-bottom: 2rem;
-}
-.campo label {
-    flex-basis: 10rem;
-} 
-.campo input:not([type="radio"]),
-.campo textarea,
-.campo select  {
-    flex: 1;
-    border: 1px solid #e1e1e1;
-    padding: 1rem;
-}
-
-/*páginas internas*/
-.imagen_musica {
-    background-image: url(../img/musica.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 25rem;
-    display: block;
-}
-
-.imagen_literatura {
-    background-image: url(../img/literatura.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 25rem;
-    display: block;
-}
-.imagen_autoayuda {
-    background-image: url(../img/autoayuda.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 25rem;
-    display: block;
-}
